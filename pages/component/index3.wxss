@@ -1,0 +1,17 @@
+.box {
+  height: 100rpx;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .serchinput {
+  background-color: white;
+  height: 80rpx;
+  width: 90%;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+}

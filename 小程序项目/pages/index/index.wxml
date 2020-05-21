@@ -1,0 +1,32 @@
+<!-- 头部搜索 -->
+<serchInput title="搜索" />
+<!-- 图片导航 -->
+<view class="banner">
+    <swiper indicator-active-color="white" autoplay="true" indicator-dots="true" indicator-color="black" interval="3000">
+      <swiper-item wx:for="{{listgoods}}" wx:key="imageSrc">
+        <image src="{{item.imageSrc}}"></image>
+      </swiper-item>
+    </swiper>
+</view>
+<!-- 分类栏 -->
+<view class="listItems">
+   <view wx:for="{{message}}" wx:key="index">
+     <view class="imgs">
+       <image src="{{item.image_src}}"></image> 
+     </view>
+   </view>
+</view>
+
+<!-- 商品栏 -->
+<!-- 标题 -->
+<view class="goodnav">{{goodName}}</view>
+
+<!-- 分类 -->
+<view class="goodlist">
+    <view wx:for="{{footData}}" wx:key="index">
+      <image src="{{item.imgSrc}}"></image>
+    </view>
+</view>
+
+
+

@@ -1,0 +1,13 @@
+<!--pages/link/index2.wxml-->
+<text>pages/link/index2.wxml</text>
+<image  src="../images/b1.jpg"></image>
+<!-- scaleTofill:缩放模式不保持纵横比例缩放图片,使图片的宽高完全拉伸至填满image元素* -->
+
+<!-- aspectFit : 缩放模式.保持纵横比例使长边能完全展示-->
+
+<!-- aspectFill : 缩放模式使短边能完全显示出来即可 -->
+
+<!-- widthFix  : 缩放模式宽度不变高度自动变化保持宽高的比例一致 -->
+
+<!-- heightFix : 缩放模式长度保持不变,高度自动变化,保持宽高的比例一致
+ -->

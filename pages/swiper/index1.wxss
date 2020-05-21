@@ -1,0 +1,19 @@
+/* pages/index1/index1.wxss */
+.box{
+  margin: 0 auto;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+/* swiper-item{
+  height: 300rpx;
+  width: 100%;
+} 
+swiper{
+  height: 300rpx;
+} */
+/* .box{
+  height: 300rpx;
+  width: 100%;
+} */

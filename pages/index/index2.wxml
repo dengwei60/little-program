@@ -1,0 +1,20 @@
+<!--pages/index/index2.wxml-->
+<text>跑链接</text>
+<!-- navigator 相当vscode里面的a标签  可以锚点式访问到其他的页面 -->
+
+<!-- 跳转到下一个页面可以跳回去回去 重定向到下一个页面-->
+<navigator url="/pages/logs/logs" open-type="navigate">navigoter的跳转,可以回头哦</navigator>
+
+<!-- 跳转然后就回不去了 关闭上一个页面-->
+
+<navigator  url="/pages/logs/logs" open-type="redirect">redirect的跳转回不了头</navigator>
+
+<!-- relauch 关闭所有的页面 -->
+<navigator url="/pages/logs/logs" open-type="reLaunch">reLaunch的跳转 </navigator>
+<!-- 跳转到含有tabbar的页面底部导航 -->
+<navigator url="/pages/logs/logs" open-type="switchTab">switchTab的跳转是会跳转到含有底部导航的页面(它的地址也是需要添加的是有底部导航的地址)</navigator>
+<!-- 退出小程序的操作依然是用navigator来进行操作 -->
+<navigator open-type="exit" target="miniProgram">退出小程序</navigator>
+
+
+<rich-text nodes="<span>123(这是一个副文本哦)</span>"></rich-text>

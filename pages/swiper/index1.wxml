@@ -1,0 +1,21 @@
+<!--pages/index1/index1.wxml-->
+<text>轮播图</text>
+<view class="box">
+  <swiper 
+  indicator-color="black"
+  indicator-dots="ture"
+  interval="3000"
+  indicator-active-color="white"
+  autoplay="ture">
+    <swiper-item>
+        <image src="../images/b1.jpg"
+       mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+        <image mode="aspectFit" src="../images/b3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+        <image mode="aspectFit" src="../images/cat.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>

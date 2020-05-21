@@ -1,0 +1,14 @@
+<!--pages/index2/index2.wxml-->
+<text>加点东西</text>
+<!-- text
+selecttable 是否可以被选中
+decode 对特殊符号进行解析另其的值为true即可 行内样式直接用插值表达式来表示-->
+<text> 2020年一月,&nbsp;微信1.0</text>
+<picker></picker>,
+<text decode="ture"> 2020年二月,&nbsp;</text>
+<picker></picker>,
+<text selectable="true">2020年3月</text>
+<!-- 选中后会变色 -->
+<text decode="ture">{{text}}</text>
+<button bindtap="addMessage">点击添加</button>
+<!-- 绑定一个事件点击后来逐条添加信息 -->

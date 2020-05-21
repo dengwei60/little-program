@@ -1,0 +1,6 @@
+<view class="box">
+    <view class="serchinput">
+      {{title}}
+    </view>
+  </view>
+  <button bindtap="handelClick">1111</button>

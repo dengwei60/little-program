@@ -1,0 +1,3 @@
+<!--pages/index3/index3.wxml-->
+<serchInput title="你在想屁吃" bind:myEvent ="handleEvent" /> 
+<!-- 因为是组件的方法所以绑定的后缀是组件的方法 此时是父亲在调用那么就在父亲的逻辑js里面进行编辑这个handleEvent的方法-->

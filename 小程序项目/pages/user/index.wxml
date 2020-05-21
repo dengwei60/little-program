@@ -1,0 +1,67 @@
+<!--pages/user/index.wxml-->
+<!-- 点击登录后显示存储的数据,没有存储的数据就先显示登录 -->
+<view class="apt-user-profile">
+      <view wx:if="{{userInfo.nickName}}">
+            <!-- 展示背景图片(模糊) -->
+            <view class="apt-user-bg">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            </view>
+            <!-- 展示的当前的图片 -->
+            <view class="imageWrapper">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            </view>
+            <!-- 展示的名字 -->
+            <view class="nickName">{{userInfo.nickName}}</view>
+      </view>
+<!-- 按钮可以访问信息 那么按钮的类型就确认了,确认后要展示需要的图片和名字-->
+<!-- 从本地存储中获取,所以我们先将数据提取到本地存储中 -->
+      <view wx:else>
+      <button 
+      open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo">登录</button>
+      </view>  
+</view>
+<!-- 订单栏-->
+<view class="listorder">
+    <view class="list">
+        <view class="iconfont icon-icon-test"></view>
+        <view>待收货</view>
+    </view>
+    <view class="list">
+        <view class="iconfont icon-daishouhuo"></view>
+        <view>待收款</view>
+    </view>
+    <view class="list">
+        <view class="iconfont icon-tuikuan"></view>
+        <view>退货/退款</view>
+    </view>
+    <view class="list">
+        <view class="iconfont icon-quanbudingdan"></view>
+        <view>全部订单</view>
+    </view>
+</view>
+<!-- 底部分栏 -->
+<view class="footer">
+    <view class="footerlist">
+        <view class="left">
+        <view class="iconfont icon-lianxikefu"></view>
+        <view>联系客服</view>
+        </view>
+        <view class="right">400-618-400</view>
+    </view>
+    <view class="footerlist">
+        <view class="left">
+        <view class="iconfont icon-yijianfankui"></view>
+        <view>意见反馈</view>
+        </view>
+        <view class="right">iso9001</view>
+    </view>
+    <view class="footerlist">
+        <view class="left">
+        <view class="iconfont icon-ziyuan"></view>
+        <view>当前版本</view>
+        </view>
+        <view class="right">v4.1.1</view>
+    </view>
+</view>
+
